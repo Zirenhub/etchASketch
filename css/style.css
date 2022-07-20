@@ -40,6 +40,29 @@ body {
     flex-direction: column;
 }
 
+.color-grid-container {
+    display: flex;
+    margin-left: 112px;
+}
+
+.grid-border-container {
+    justify-content: center;
+    align-content: center;
+}
+
+.color-container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+label {
+    font-family: 'Comfortaa', cursive;
+    margin-top: 10px;
+}
+
 .grid-container {
     border: 4px;
     border-style: solid;
@@ -63,7 +86,7 @@ body {
     font-weight: bold;
 }
 
-.clear-button {
+.clear-button, .rainbow-button {
     margin-top: 20px;
     background-color: #fbeee0;
     border: 2px solid #422800;
@@ -83,17 +106,17 @@ body {
     touch-action: manipulation;
 }
 
-.clear-button:hover {
+.clear-button:hover, .rainbow-button:hover {
     background-color: #fff;
 }
 
-.clear-button:active {
+.clear-button:active, .rainbow-button:active {
     box-shadow: #422800 2px 2px 0 0;
     transform: translate(2px, 2px);
 }
 
 @media (min-width: 768px) {
-    .clear-button {
+    .clear-button, .rainbow-button {
         min-width: 120px;
         padding: 0 25px;
     }
