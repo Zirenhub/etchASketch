@@ -59,6 +59,13 @@ function watchColorPicker(e) {
 
 colorPicker.addEventListener('change', watchColorPicker, false);
 
+clearButton.addEventListener('click', () => {
+  const removeCells = document.querySelectorAll('.cell');
+  for (let i = 0; i < removeCells.length; i++) {
+    removeCells[i].style.backgroundColor = '';
+  }
+});
+
 function createGrid() {
   gridContainer.replaceChildren();
   for (let i = 0; i < Number(gridValue) * Number(gridValue); i++) {
